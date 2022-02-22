@@ -9,12 +9,15 @@
             overflow: hidden;
             padding: 25px;
             color: #4c4e56;
-          }
+            background-image:-webkit-linear-gradient(LightSalmon 50%, LightYellow 50%);
+            background-size: 100% 50px;
+            animation: stripes 2s linear infinite;
+           }
            .creditCardForm .heading h1 {
             text-align: center;
             font-family: 'Open Sans', sans-serif;
             color: #4c4e56;
-           }
+            }
             .creditCardForm .payment {
             float: left;
             font-size: 18px;
@@ -22,48 +25,75 @@
             margin-top: 20px;
             position: relative;
             }
-         .creditCardForm .payment .form-group {
-          float: left;
-          margin-bottom: 15px;
+           .creditCardForm .payment .form-group {
+            float: left;
+            margin-bottom: 15px;
+            }
+           .creditCardForm .payment .form-control {
+            line-height: 40px;
+            height: auto;
+            padding: 0 16px;
+            width: 300px;
+            }
+        
+          .creditCardForm .owner {
+           width: 73%;
+           margin-right: 10px;
+           font-display: white;
+           color:black;
+           }
+           .creditCardForm .owner:hover {
+               font-size: 150%;
+           }
+        
+          .creditCardForm .CVV {
+           width: 20%;
+           color:black;
           }
-         .creditCardForm .payment .form-control {
-          line-height: 40px;
-          height: auto;
-           padding: 0 16px;
-           width: 300px;
+          .creditCardForm .CVV:hover{
+              font-size: 150%;
           }
-        
-        .creditCardForm .owner {
-          width: 73%;
-          margin-right: 10px;
-        
-         }
-        
-        .creditCardForm .CVV {
-         width: 20%;
-        }
-        .creditCardForm #pay-now {
-          width: 100%;
-          margin-top: 25px;
-        }
-        .creditCardForm .payment .btn {
-          width: 100%;
-          margin-top: 3px;
-          font-size: 24px;
-          background-color: #2ec4a5;
-          color: white;
-        }
-        .creditCardForm .payment select {
+          .creditCardForm #expiration-date {
+              color:black;
+          }
+          .creditCardForm #expiration-date:hover {
+              font-size: 150%;
+          }
+          .creditCardForm #card-number-field:hover{
+              font-size: 150%;
+          }
+          .creditCardForm #card-number-field {
+              color:black;
+          }
+          .creditCardForm #pay-now {
+           width: 100%;
+           margin-top: 25px;
+          }
+         .creditCardForm .payment .btn {
+           width: 100%;
+           margin-top: 3px;
+           font-size: 24px;
+           background-color: #2ec4a5;
+           color: white;
+           }
+           .creditCardForm .payment .btn:hover {
+               font-size:150%;
+           }
+         .creditCardForm .payment select {
           padding: 11px;
           margin-right: 15px;
-        }
+          }
+          h1{
+              color: black;
+          }
+
         
     </style>
     </head>
     <body>
         <div class="creditCardForm">
             <div class="heading">
-                <h1>Confirm Purchase</h1>
+                <h1> Confirm Purchase</h1>
             </div>
             <div class="payment">
                 <form>
@@ -73,16 +103,16 @@
                     </div>
                     <div class="form-group CVV">
                         <label for="cvv"><b>CVV</b></label><br>
-                        <input type="text" class="form-control" id="cvv" style=" margin-right:100px;width: 200px; padding: 0;display:inline-block">
+                        <input type="text" class="form-control" id="cvv" style="color:black; margin-right:100px;width: 200px; padding: 0;display:inline-block">
                     </div>
                     <div class="form-group" id="card-number-field">
                         <label for="cardNumber"><b>Card Number</b></label><br>
-                        <input type="text" class="form-control" id="cardNumber" style="width:500px">
+                        <input type="text" class="form-control" id="cardNumber" style="width:500px;">
                     </div>
                     <div class="form-group" id="expiration-date">
                         <label><b>Expiration Date</b></label><br>
                         <select>
-                            <option value="01">January</option>
+                            <option value="01"><b>January</b></option>
                             <option value="02">February </option>
                             <option value="03">March</option>
                             <option value="04">April</option>
@@ -96,7 +126,7 @@
                             <option value="12">December</option>
                         </select>
                         <select>
-                            <option value="16"> 2016</option>
+                            <option value="16"> <b>2016</b></option>
                             <option value="17"> 2017</option>
                             <option value="18"> 2018</option>
                             <option value="19"> 2019</option>
